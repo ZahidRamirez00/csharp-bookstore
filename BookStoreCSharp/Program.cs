@@ -65,15 +65,15 @@ do
 
 
 Console.WriteLine(
-    "--------------- IL LIBRO DI OGGI: " + titoloLibro + " di " + autoreLibro + " ----------------\n\n" +
-    "Informazioni generiche:\n" +
-    "ISBN: " + isbnLibro + "\n" +
-    "Numero delle pagine: " + numeroPagineLibro + " pagine\n" +
-    "Peso del libro: " + pesoLibro + "kg\n" +
-    "Dimensioni del libro: " + larghezzaLibro + " cm X " + altezzaLibro + " cm X " + profonditaLibro + " cm\n\n" +
-    "Informazioni Amazon:\n"
-    "Numero di recensioni: " + numeroRecenzioniLibro + " recensioni\n" +
-    "Valutazione media: " + valutazioneMediaLibro + " stelline"
+    "--------------- IL LIBRO DI OGGI: " + titoloLibro + " di " + autoreLibro + " ----------------\n\n" 
+    + "Informazioni generiche:\n" 
+    + "ISBN: " + isbnLibro + "\n" 
+    + "Numero delle pagine: " + numeroPagineLibro + " pagine\n" 
+    + "Peso del libro: " + pesoLibro + "kg\n" 
+    + "Dimensioni del libro: " + larghezzaLibro + " cm X " + altezzaLibro + " cm X " + profonditaLibro + " cm\n\n" 
+    + "Informazioni Amazon:\n"
+    + "Numero di recensioni: " + numeroRecenzioniLibro + " recensioni\n" 
+    + "Valutazione media: " + valutazioneMediaLibro + " stelline"
     );
 if (versioneKindle)
 {
@@ -87,14 +87,14 @@ else
 if (copertinaFlessibile)
 {
     Console.WriteLine(
-        "Copertina flessibile disponibile: Si\n\n" +
-        "------------------------------------------------------------------------------------"
+        "Copertina flessibile disponibile: Si\n\n"
+        + "------------------------------------------------------------------------------------"
         );
 }
 else
 {
     Console.WriteLine(
-        "Copertina flessibile disponibile: No\n\n" +
-        "------------------------------------------------------------------------------------"
+        "Copertina flessibile disponibile: No\n\n"
+        + +"------------------------------------------------------------------------------------"
         );
 }
