@@ -23,7 +23,9 @@ pesoLibro = float.Parse(Console.ReadLine("Inserisci il peso del libro (in Kg): "
 larghezzaLibro = float.Parse(Console.ReadLine("Inserisci la larghezza del libro (in cm): "));
 altezzaLibro = float.Parse(Console.ReadLine("Inserisci l'altezza del libro (in cm): "));
 profonditaLibro = float.Parse(Console.ReadLine("Inserisci la profondità del libro (in cm): "));
-valutazioneMediaLibro = float.Parse(Console.ReadLine("Inserisci la valutazione media del libro: "));
+do {
+    valutazioneMediaLibro = float.Parse(Console.ReadLine("Inserisci la valutazione media del libro: "));
+}while(valutazioneMediaLibro >= 0 || valutazioneMediaLibro <= 5)
 numeroPagineLibro = int.Parse(Console.ReadLine("Inserisci il numero di recensioni del libro: ");
 
 do {
@@ -62,3 +64,37 @@ do
 } while (ynConsole == 'y' || ynConsole == 'n');
 
 
+Console.WriteLine(
+    "--------------- IL LIBRO DI OGGI: " + titoloLibro + " di " + autoreLibro + " ----------------\n\n" +
+    "Informazioni generiche:\n" +
+    "ISBN: " + isbnLibro + "\n" +
+    "Numero delle pagine: " + numeroPagineLibro + " pagine\n" +
+    "Peso del libro: " + pesoLibro + "kg\n" +
+    "Dimensioni del libro: " + larghezzaLibro + " cm X " + altezzaLibro + " cm X " + profonditaLibro + " cm\n\n" +
+    "Informazioni Amazon:\n"
+    "Numero di recensioni: " + numeroRecenzioniLibro + " recensioni\n" +
+    "Valutazione media: " + valutazioneMediaLibro + " stelline"
+    );
+if (versioneKindle)
+{
+    Console.WriteLine("Kindle disponibile: Si");
+}
+else
+{
+    Console.WriteLine("Kindle disponibile: No");
+}
+
+if (copertinaFlessibile)
+{
+    Console.WriteLine(
+        "Copertina flessibile disponibile: Si\n\n" +
+        "------------------------------------------------------------------------------------"
+        );
+}
+else
+{
+    Console.WriteLine(
+        "Copertina flessibile disponibile: No\n\n" +
+        "------------------------------------------------------------------------------------"
+        );
+}
